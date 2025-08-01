@@ -1,5 +1,6 @@
 .list-container {
-  padding: 6rem 2rem 2rem;
+  width: 90%;
+  margin: auto;
 }
 
 input {
@@ -14,6 +15,7 @@ input {
 }
 
 .grid {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
