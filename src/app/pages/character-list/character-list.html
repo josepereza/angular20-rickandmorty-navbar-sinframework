@@ -1,0 +1,11 @@
+<div class="list-container">
+  <input type="text" [formControl]="searchControl" placeholder="Search characters...">
+  <div class="grid">
+    @for (character of characters(); track character.id) {
+      <div class="card" [routerLink]="['/character', character.id]">
+        <img [ngSrc]="character.image" width="500" height="300"  style="object-fit:cover;" [alt]="character.name">
+        <h3>{{ character.name }}</h3>
+      </div>
+    }
+  </div>
+</div>
